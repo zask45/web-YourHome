@@ -1,0 +1,29 @@
+FITUR JS: 
+
+membuat slider
+
+CARA MENGAKSES:
+
+- buka berkas index.html menggunakan browser
+
+- pada bagian konsep terdapat slider yang berisi <figure> (gambar dan figcaption)
+
+- klik < untuk kembali ke slide sebelumnya, dan > untuk menuju slide berikutnya
+
+- file javascript diberi nama slider.js
+
+
+ISI FOLDER PROYEK:
+
+- file html, yaitu index.html
+
+- stylesheet, yaitu style.css
+
+- file javascript, yaitu slider.js
+
+- folder assets
+
+
+ISI FOLDER ASSETS:
+
+- gambar-gambar yang akan digunakan untuk web

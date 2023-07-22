@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Secular+One&display=swap');
+
+html, body {
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #fbfcf8;
+    
+}
+
+body h1 {
+    color: #121212;
+}
+
+body p {
+    color: #555555;
+}
+
+main {
+    margin-top: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+}
+
+.card {
+    padding: 64px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 32px;
+    margin-bottom: 96px;
+    margin-right: 24px;
+}
+
+header {
+    display: flex;
+    padding-left: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(120, 87, 59);
+    color: white;
+}
+
+header a, header .logo {
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: 'Secular One', sans-serif;
+    font-size: 24px;
+}
+
+header p, nav ul {
+    margin-block-start: 24px;
+    margin-block-end: 24px;
+
+}
+
+nav {
+    position: absolute;
+    right: 7%;
+}
+
+nav li {
+    display: inline;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+header p {
+    padding: 0 1%;
+    color: rgba(239, 237, 231, 0.85);
+}
+
+#content {
+    width: 75%;
+}
+
+.content-title {
+    font-size: 48px;
+    padding: 8px;
+}
+
+#content h1 {
+    margin: 0;
+}
+
+#content p {
+    font-size: 18px;
+    margin-block-start: 8px;
+    margin-block-end: 16px;
+}
+
+#konsep h1, #aksesoris h1 {
+    font-size: 28px;
+}
+
+.slider-container {
+    position: relative;
+}
+
+article {
+    padding: 32px 8px;
+}
+
+figure {
+    margin: 40px 0;
+    animation: fade 2s;
+}
+
+@keyframes fade {
+    from {opacity: 0.5}
+    to {opacity: 1}
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+    padding: 8px 0;
+}
+
+.goBack, .goNext{
+    position: absolute;
+    display: flex;
+    top: 35%;
+    font-size: 40px;
+    color: whitesmoke;
+    cursor: pointer;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.goBack {
+    left: 0;
+    padding-left: 1.5%;
+    padding-right: 2%;
+}
+
+.goNext {
+    right: 0;
+    padding-left: 2%;
+    padding-right: 1.5%;
+}
+
+.goBack:hover, .goNext:hover {
+    background-color: rgba(18, 18, 18, 0.753);
+}
+
+aside {
+    padding: 16px;
+    width: 25%;
+    height: fit-content;
+}
+
+aside img {
+    width: 100%;
+}
+
+footer {
+    padding: 8px 72px;
+    display: block;
+    background-color: rgb(184, 146, 106);
+}
+
+footer h1 {
+    color:rgb(240, 236, 230);
+}
+
+footer p {
+    color: #efede7;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 0 auto;
+        padding-left: 28px;
+    }
+
+    header p {
+        display: none;
+    }
+
+    nav li {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        padding: 10px;
+    }
+
+    main {
+        display: block;
+    }
+
+    #content, aside {
+        width: 100%;
+    }
+
+    article {
+        padding-top: 20px;
+    }
+    
+    .content-title {
+        font-size: 175%;
+    }
+
+    #konsep h1, #aksesoris h1 {
+        font-size: 125%;
+    }
+
+    .goBack, .goNext {
+        top: 30%;
+        font-size: 28px;
+    }
+
+    aside {
+        text-align: center;
+    }
+
+    aside img {
+        width: 50%;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 300px){
+    .logo {
+        font-size: 100%;
+    }
+
+    nav ul {
+        font-size: 75%;
+        margin: 0;
+        padding: 12.5% 0;
+    }
+
+    main {
+        margin-bottom: 35%;
+    }
+
+    .goBack, .goNext {
+        top: 30%;
+        font-size: 20px;
+    }
+
+    #content, .card {
+        margin-bottom: 20%;
+    }
+
+    .content-title, aside h1 {
+        font-size: 130%;
+    }
+
+    #konsep h1, #aksesoris h1 {
+        font-size: 100%;
+    }
+
+    #content p, aside p {
+        font-size: 75%;
+    }
+
+    figcaption {
+        font-size: 65%;
+    }
+
+   footer .logo{
+        font-size: 100%;
+   }
+
+   footer p {
+        font-size: 75%;
+   }
+
+}
+
+@media screen and (min-width: 700px){
+    .goBack, .goNext {
+        top: 35%;
+    }
+}
+  
