@@ -1,4 +1,4 @@
-# web-YourHome
+# YourHome
 
 A simple web page in the form of an article, built with HTML and CSS.
 
